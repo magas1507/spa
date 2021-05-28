@@ -10,7 +10,7 @@ script:
   -yarn build
 deploy:
   provider: pages
-  edge: true,
+  edge: true
   skip-cleanup: true
   keep-history: true
   github-tiken: $GITHUB_TOKEN
@@ -18,4 +18,4 @@ deploy:
   target-branch: gh-pages
   commit_message: "Deploy Release"
   on:
-    branch: main
+    branch: master
